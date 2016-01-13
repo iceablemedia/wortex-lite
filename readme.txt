@@ -40,7 +40,7 @@ This theme bundles some third party javascript/jQuery plugins and font, all open
 * superfish: Copyright 2013 Joel Birch. Dual licensed under the MIT and GPL licenses. http://users.tpg.com.au/j_birch/plugins/superfish/
 * Font Awesome: Copyright Dave Gandy. Font licensed under SIL OFL 1.1. CSS code licensed under MIT License. http://fortawesome.github.io/Font-Awesome/
 
-All other files are Copyright 2014-2015 Iceable Media.
+All other files are Copyright 2014-2016 Iceable Media.
 
 == TRANSLATIONS ==
 
@@ -60,6 +60,7 @@ Your translation files will be added to the next update. Don't forget to leave y
 November 23rd, 2015
 January 13th, 2016
 * Enhanced support for <!--more--> quicktag
+* Updated copyright to 2016
 * Tested with WordPress 4.4.1
 
 = 1.2.3 =
