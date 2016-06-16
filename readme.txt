@@ -1,7 +1,7 @@
 === WORTEX LITE ===
 
 Contributors: Iceable
-Tags: gray, green, white, light, one-column, two-columns, right-sidebar, fixed-layout, responsive-layout, custom-header, custom-menu, editor-style, featured-images, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
+Tags: one-column, two-columns, right-sidebar, grid-layout, custom-header, custom-menu, footer-widgets, editor-style, featured-images, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, blog, entertainment, news
 Requires at least: 3.5
 Tested up to: 4.5.2
 Stable tag: 1.2.5
@@ -59,8 +59,10 @@ Your translation files will be added to the next update. Don't forget to leave y
 = 1.2.5 =
 June 16th, 2016
 * Tested with WordPress 4.5.2
+* Update font-awesome to 4.6.3
 * Updated external links to wordpress.org and iceablethemes.com to https
 * Removed php closing tags from end of files to prevent potential issues
+* Updated theme tags for WordPress.org
 
 = 1.2.4 =
 January 13th, 2016
