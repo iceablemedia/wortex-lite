@@ -225,8 +225,8 @@ add_filter('post_class','wortex_remove_hentry');
  */
 function wortex_remove_rel_cat( $text ) {
 	$text = str_replace(' rel="category"', "", $text);
-	$text = str_replace(' rel="category tag"', "", $text);
-	return $text;
+  $text = str_replace(' rel="category tag"', ' rel="tag"', $text);
+  return $text;
 }
 add_filter( 'the_category', 'wortex_remove_rel_cat' );
 
