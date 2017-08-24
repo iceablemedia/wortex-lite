@@ -12,12 +12,12 @@
 /*
  * Theme constants
  */
-define( "THEME_DIR", get_template_directory() );
-define( "THEME_DIR_URI", get_template_directory_uri() );
-define( "STYLESHEET_DIR", get_stylesheet_directory() );
-define( "STYLESHEET_DIR_URI", get_stylesheet_directory_uri() );
-$the_theme = wp_get_theme();
-define( "THEME_VERSION", $the_theme->get( 'Version' ) );
+define( "WORTEX_THEME_DIR", get_template_directory() );
+define( "WORTEX_THEME_DIR_URI", get_template_directory_uri() );
+define( "WORTEX_STYLESHEET_DIR", get_stylesheet_directory() );
+define( "WORTEX_STYLESHEET_DIR_URI", get_stylesheet_directory_uri() );
+$wortex_the_theme = wp_get_theme();
+define( "WORTEX_THEME_VERSION", $wortex_the_theme->get( 'Version' ) );
 
 /*
  * Setup function
@@ -27,7 +27,7 @@ function wortex_setup(){
 	 * Translations can be added to the /languages directory.
 	 * A .pot template file is included to get you started
 	 */
-	load_theme_textdomain('wortex-lite', THEME_DIR . '/languages');
+	load_theme_textdomain('wortex-lite', WORTEX_THEME_DIR . '/languages');
 
 	/* Feed links support */
 	add_theme_support( 'automatic-feed-links' );
@@ -56,7 +56,7 @@ function wortex_setup(){
 	/* Custom background support */
 	add_theme_support( 'custom-background',
 						array(	'default-color' => 'e9e9e9',
-								'default-image' => THEME_DIR_URI . '/img/bright-squares.jpg',
+								'default-image' => WORTEX_THEME_DIR_URI . '/img/bright-squares.jpg',
 								)
 					);
 
@@ -157,13 +157,13 @@ function wortex_styles() {
 		 * Enqueue child-theme's versions of stylesheet in /css if they exist,
 		 * or the parent theme's version otherwise
 		 */
-		 wp_register_style( 'wortex', get_theme_file_uri( $stylesheet ), array(), THEME_VERSION  );
+		 wp_register_style( 'wortex', get_theme_file_uri( $stylesheet ), array(), WORTEX_THEME_VERSION  );
 
 		 // Enqueue style.css from the current theme
-		 wp_register_style( 'wortex-style', get_theme_file_uri( '/style.css' ), array(), THEME_VERSION  );
+		 wp_register_style( 'wortex-style', get_theme_file_uri( '/style.css' ), array(), WORTEX_THEME_VERSION  );
 
 		 // Font Awesome
-		 wp_register_style( 'font-awesome', get_theme_file_uri( '/css/font-awesome/css/font-awesome.min.css' ), array(), THEME_VERSION  );
+		 wp_register_style( 'font-awesome', get_theme_file_uri( '/css/font-awesome/css/font-awesome.min.css' ), array(), WORTEX_THEME_VERSION  );
 
 	else: // Support for WordPress <4.7 (to be removed after 4.9 is released)
 
@@ -171,16 +171,16 @@ function wortex_styles() {
 		 * Enqueue child-theme's versions of stylesheet in /css if they exist,
 		 * or the parent theme's version otherwise
 		 */
-		if ( @file_exists( STYLESHEET_DIR . $stylesheet ) )
-			wp_register_style( 'wortex', STYLESHEET_DIR_URI . $stylesheet, array(), THEME_VERSION  );
+		if ( @file_exists( WORTEX_STYLESHEET_DIR . $stylesheet ) )
+			wp_register_style( 'wortex', WORTEX_STYLESHEET_DIR_URI . $stylesheet, array(), WORTEX_THEME_VERSION  );
 		else
-			wp_register_style( 'wortex', THEME_DIR_URI . $stylesheet, array(), THEME_VERSION  );
+			wp_register_style( 'wortex', WORTEX_THEME_DIR_URI . $stylesheet, array(), WORTEX_THEME_VERSION  );
 
 		// Always enqueue style.css from the current theme
-		wp_register_style( 'wortex-style', STYLESHEET_DIR_URI . '/style.css', array(), THEME_VERSION );
+		wp_register_style( 'wortex-style', WORTEX_STYLESHEET_DIR_URI . '/style.css', array(), WORTEX_THEME_VERSION );
 
 		// Font Awesome
-		wp_register_style( 'font-awesome', THEME_DIR_URI . "/css/font-awesome/css/font-awesome.min.css" );
+		wp_register_style( 'font-awesome', WORTEX_THEME_DIR_URI . "/css/font-awesome/css/font-awesome.min.css" );
 
 	endif;
 
@@ -205,13 +205,13 @@ add_action( 'init', 'wortex_editor_styles' );
 function wortex_scripts() {
 
 	if ( function_exists( 'get_theme_file_uri' ) ): // WordPress 4.7
-		wp_enqueue_script('wortex', get_theme_file_uri( '/js/wortex.min.js' ), array('jquery','hoverIntent'), THEME_VERSION );
+		wp_enqueue_script('wortex', get_theme_file_uri( '/js/wortex.min.js' ), array('jquery','hoverIntent'), WORTEX_THEME_VERSION );
 		// Loads HTML5 JavaScript file to add support for HTML5 elements for IE < 9.
-    wp_enqueue_script( 'html5shiv', get_theme_file_uri( '/js/html5.js' ), array(), THEME_VERSION );
+    wp_enqueue_script( 'html5shiv', get_theme_file_uri( '/js/html5.js' ), array(), WORTEX_THEME_VERSION );
 	else: // Support for WordPress <4.7 (to be removed after 4.9 is released)
-		wp_enqueue_script('wortex', THEME_DIR_URI . '/js/wortex.min.js', array('jquery','hoverIntent'), THEME_VERSION );
+		wp_enqueue_script('wortex', WORTEX_THEME_DIR_URI . '/js/wortex.min.js', array('jquery','hoverIntent'), WORTEX_THEME_VERSION );
 		// Loads HTML5 JavaScript file to add support for HTML5 elements for IE < 9.
-    wp_enqueue_script( 'html5shiv', THEME_DIR_URI . '/js/html5.js', array(), THEME_VERSION );
+    wp_enqueue_script( 'html5shiv', WORTEX_THEME_DIR_URI . '/js/html5.js', array(), WORTEX_THEME_VERSION );
 	endif;
 
 	// Add conditional for HTML5Shiv to only load for IE < 9
