@@ -58,6 +58,7 @@ Your translation files will be added to the next update. Don't forget to leave y
 
 = 1.2.13 =
 August 24th, 2017
+* Updated font-awesome to 4.7.0
 * Wrapped pingback url in appropriate conditionals in header.php
 * HTML5Shiv is now properly enqueued
 * Prefixed theme constants
