@@ -152,37 +152,17 @@ function wortex_styles() {
 		$stylesheet = '/css/wortex-unresponsive.min.css';
 	endif;
 
-	if ( function_exists( 'get_theme_file_uri' ) ): // WordPress 4.7
-		/* Child theme support:
-		 * Enqueue child-theme's versions of stylesheet in /css if they exist,
-		 * or the parent theme's version otherwise
-		 */
-		 wp_register_style( 'wortex', get_theme_file_uri( $stylesheet ), array(), WORTEX_THEME_VERSION  );
+	/* Child theme support:
+	 * Enqueue child-theme's versions of stylesheet in /css if they exist,
+	 * or the parent theme's version otherwise
+	 */
+	 wp_register_style( 'wortex', get_theme_file_uri( $stylesheet ), array(), WORTEX_THEME_VERSION  );
 
-		 // Enqueue style.css from the current theme
-		 wp_register_style( 'wortex-style', get_theme_file_uri( '/style.css' ), array(), WORTEX_THEME_VERSION  );
+	 // Enqueue style.css from the current theme
+	 wp_register_style( 'wortex-style', get_theme_file_uri( '/style.css' ), array(), WORTEX_THEME_VERSION  );
 
-		 // Font Awesome
-		 wp_register_style( 'font-awesome', get_theme_file_uri( '/css/font-awesome/css/font-awesome.min.css' ), array(), WORTEX_THEME_VERSION  );
-
-	else: // Support for WordPress <4.7 (to be removed after 4.9 is released)
-
-		/* Child theme support:
-		 * Enqueue child-theme's versions of stylesheet in /css if they exist,
-		 * or the parent theme's version otherwise
-		 */
-		if ( @file_exists( WORTEX_STYLESHEET_DIR . $stylesheet ) )
-			wp_register_style( 'wortex', WORTEX_STYLESHEET_DIR_URI . $stylesheet, array(), WORTEX_THEME_VERSION  );
-		else
-			wp_register_style( 'wortex', WORTEX_THEME_DIR_URI . $stylesheet, array(), WORTEX_THEME_VERSION  );
-
-		// Always enqueue style.css from the current theme
-		wp_register_style( 'wortex-style', WORTEX_STYLESHEET_DIR_URI . '/style.css', array(), WORTEX_THEME_VERSION );
-
-		// Font Awesome
-		wp_register_style( 'font-awesome', WORTEX_THEME_DIR_URI . "/css/font-awesome/css/font-awesome.min.css" );
-
-	endif;
+	 // Font Awesome
+	 wp_register_style( 'font-awesome', get_theme_file_uri( '/css/font-awesome/css/font-awesome.min.css' ), array(), WORTEX_THEME_VERSION  );
 
 	wp_enqueue_style( 'wortex' );
 	wp_enqueue_style( 'wortex-style' );
