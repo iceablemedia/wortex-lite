@@ -2,16 +2,10 @@
  * Wortex Lite WordPress Theme by Iceable Themes | https://www.iceablethemes.com
  * Copyright 2014-2017 Mathieu Sarrasin - Iceable Media
  * Javascripts
+ *
+ * Dependencies:
+ * - Superfish
  */
-
-/* Index *
-==================================================
- * 1. Wortex's own scripts + plugins init
- * 2. Superfish
- */
-
-/* 1. Wortex's own scripts + plugins init
-================================================== */
 
 $ = jQuery;
 
@@ -37,7 +31,7 @@ $(document).ready(function($){
 		$(this).attr('value', $placeholder).addClass("notfilled");
 		$(this).keydown(function(){ if( $(this).attr('value') == $placeholder ) $(this).attr('value', '').removeClass("notfilled"); });
 		$(this).keyup(function(){
-			if($(this).attr('value') == ''){ $(this).attr('value', $placeholder).addClass("notfilled").setCursorPosition(0); }
+			if($(this).attr('value') === ''){ $(this).attr('value', $placeholder).addClass("notfilled").setCursorPosition(0); }
 		});
 	});
 
@@ -72,14 +66,14 @@ $(document).ready(function($){
 	});
 
 	/* Remove empty comment reply link wrappers */
-	$('div.reply').filter(function() {return $.trim($(this).text()) === ''}).remove()
+	$('div.reply').filter(function() {return $.trim($(this).text()) === '';}).remove();
 
 }); /*--- End of $(document).ready(function() ---*/
 
 /*--- Helper functions ---*/
 
 $.fn.setCursorPosition = function(position){
-	    if(this.lengh == 0) return this;
+	    if(this.lengh === 0) return this;
 	    input = this[0];
 	    if (input.createTextRange) {
 	        var range = input.createTextRange();
@@ -92,12 +86,12 @@ $.fn.setCursorPosition = function(position){
 	        input.setSelectionRange(position, position);
 	    }
 	    return this;
-	}
+	};
 
 // Position sub-menus depending on navbar height and header padding
 function subMenuPos() {
 	var submenuTop = $('#navbar ul.menu').height() + parseInt( $('#header').css('padding-bottom') );
-	$('#navbar ul.menu > li > ul').each(function(){ $(this).css('top', submenuTop + 'px') });
+	$('#navbar ul.menu > li > ul').each(function(){ $(this).css('top', submenuTop + 'px'); });
 }
 
 // Define max-width for navbar (depending on container and logo size)
@@ -109,8 +103,6 @@ function navbarWidth() {
 	$("#navbar").css("width", menuWidth + 'px' );
 }
 
-/* 2. Superfish
-================================================== */
 
 /*
  * Superfish v1.4.8 - jQuery menu widget
