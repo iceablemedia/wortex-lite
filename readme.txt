@@ -32,7 +32,7 @@ Wortex Lite is the lite version of Wortex Pro, which comes with many additional 
 ### Translation
 
 Bundled translations (GPL Licensed):
-* French (fr_FR) translation: by Iceable Media
+* French (fr_FR) translation: Copyright 2014-2018, Iceable Media - Mathieu Sarrasin (https://www.iceablethemes.com)
 
 Translating this theme into your own language is quick and easy, you will find a .POT file in the /languages folder to get you started. It contains about 80 strings only.
 
@@ -43,7 +43,7 @@ Your translation files will be added to the next update. Don't forget to leave y
 
 ## Copyright
 
-Wortex Lite WordPress Theme, Copyright 2014-2017 Iceable Themes (https://www.iceablethemes.com)
+Wortex Lite WordPress Theme, Copyright 2014-2018 Iceable Media - Mathieu Sarrasin (https://www.iceablethemes.com)
 Wortex Lite is distributed under the terms of the GNU GPL
 
 Wortex Lite bundles the following third-party resources:
@@ -66,6 +66,10 @@ Source: http://fontawesome.io/
 
 
 ## Changelog
+
+### 1.2.17
+January 31th, 2018
+* Updated copyright
 
 ### 1.2.16
 November 18th, 2017
