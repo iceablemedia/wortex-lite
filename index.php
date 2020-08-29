@@ -38,7 +38,7 @@ if ( '' !== $wortex_page_title ) :
 		<div class="container">
 			<h2>
 				<?php
-				echo esc_html( $wortex_page_title );
+				echo wp_kses( $wortex_page_title, 'post' );
 				?>
 			</h2>
 		</div>
