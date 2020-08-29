@@ -25,6 +25,11 @@
 </head>
 <body <?php body_class(); ?>>
 	<?php
+		if ( function_exists( 'wp_body_open' ) ) {
+			wp_body_open( );
+		} else {
+			do_action( 'wp_body_open' );
+		}
 
 	/* Wide or boxed layout ? */
 	$boxed = ( 'boxed' === get_theme_mod( 'wortex_layout' ) ) ? true : false;
