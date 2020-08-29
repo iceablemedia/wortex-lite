@@ -2,8 +2,8 @@
 
 **Contributors:** iceable  
 **Requires at least:** WordPress 4.7  
-**Stable tag:** 1.2.18  
-**Version:** 1.2.18  
+**Stable tag:** 1.2.19  
+**Version:** 1.2.19  
 **Tested up to:** 5.5  
 **Requires PHP:** 5.6  
 **License:** GPLv2 or later  
@@ -87,6 +87,13 @@ Source: http://fontawesome.io/
 
 
 ## Changelog
+
+### 1.1.19
+August 29th, 2020
+* Fixed archive title escaping for WordPress 5.5+
+* Added "Tested up to" and "Requires PHP" headers in style.css
+* Added wp_body_open()
+* Updated copyright
 
 ### 1.2.18
 February 28th, 2019
