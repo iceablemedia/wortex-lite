@@ -104,7 +104,7 @@ endif;
 									get_the_author()
 								);
 								?>
-								<span class="meta-author author vcard"><i class="fa fa-user"></i><span><?php esc_html_e( 'by', 'wortex-lite' ); ?></span><?php echo wp_kses_post( $author ); ?></span>
+								<span class="meta-author author vcard"><i class="fa fa-user"></i><span><?php esc_html_e( 'by', 'wortex-lite' ); ?></span> <?php echo wp_kses_post( $author ); ?></span>
 								<span class="meta-category"><i class="fa fa-tag"></i><?php the_category( ', ' ); ?></span>
 								<?php
 
