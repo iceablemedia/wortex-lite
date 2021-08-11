@@ -2,9 +2,9 @@
 
 **Contributors:** iceable
 **Requires at least:** WordPress 4.7
-**Stable tag:** 1.2.19
-**Version:** 1.2.19
-**Tested up to:** 5.5
+**Stable tag:** 1.2.20
+**Version:** 1.2.20
+**Tested up to:** 5.8
 **Requires PHP:** 5.6
 **License:** GPLv2 or later
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html
@@ -67,6 +67,10 @@ Source: http://fontawesome.io/
 
 
 ## Changelog
+
+### 1.1.20
+August 11th, 2021
+* Fixed missing space before author's name in index.php (props @automcoding)
 
 ### 1.1.19
 August 29th, 2020

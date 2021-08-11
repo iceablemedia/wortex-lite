@@ -1,13 +1,13 @@
 # Wortex Lite
 
-**Contributors:** iceable  
-**Requires at least:** WordPress 4.7  
-**Stable tag:** 1.2.19  
-**Version:** 1.2.19  
-**Tested up to:** 5.5  
-**Requires PHP:** 5.6  
-**License:** GPLv2 or later  
-**License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
+**Contributors:** iceable
+**Requires at least:** WordPress 4.7
+**Stable tag:** 1.2.20
+**Version:** 1.2.20
+**Tested up to:** 5.5
+**Requires PHP:** 5.6
+**License:** GPLv2 or later
+**License URI:** http://www.gnu.org/licenses/gpl-2.0.html
 **Tags:** one-column, two-columns, right-sidebar, grid-layout, custom-header, custom-menu, footer-widgets, editor-style, featured-images, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, blog, entertainment, news
 
 A clean, professional looking, responsive WordPress Theme by Iceable Themes.
@@ -53,7 +53,7 @@ Wortex Lite is the lite version of [Wortex Pro](https://www.iceablethemes.com/sh
 
 Bundled translations (GPL Licensed):
 
-* French (fr_FR) translation: Copyright 2014-2020, Iceable Themes - https://www.iceablethemes.com  
+* French (fr_FR) translation: Copyright 2014-2020, Iceable Themes - https://www.iceablethemes.com
 
 Translating this theme into your own language is quick and easy, you will find a .POT file in the /languages folder to get you started. It contains about 80 strings only.
 
@@ -64,25 +64,25 @@ Your translation files will be added to the next update. Don't forget to leave y
 
 ## Copyright
 
-Wortex Lite WordPress Theme, Copyright 2014-2020 Iceable Themes - https://www.iceablethemes.com  
+Wortex Lite WordPress Theme, Copyright 2014-2020 Iceable Themes - https://www.iceablethemes.com
 Wortex Lite is distributed under the terms of the GNU GPL
 
 Wortex Lite bundles the following third-party resources:
 
-hoverIntent, Copyright 2007, 2013 Brian Cherne.  
-**License:** MIT  
+hoverIntent, Copyright 2007, 2013 Brian Cherne.
+**License:** MIT
 Source: http://cherne.net/brian/resources/jquery.hoverIntent.html
 
-superfish, Copyright 2013 Joel Birch.  
-**License:** MIT and GPL  
+superfish, Copyright 2013 Joel Birch.
+**License:** MIT and GPL
 Source: http://users.tpg.com.au/j_birch/plugins/superfish/
 
-HTML5 Shiv v3.6, Copyright @afarkas @jdalton @jon_neal @rem  
-**License:** MIT/GPL2  
+HTML5 Shiv v3.6, Copyright @afarkas @jdalton @jon_neal @rem
+**License:** MIT/GPL2
 Source: https://github.com/aFarkas/html5shiv
 
-Font Awesome icons, Copyright Dave Gandy  
-**License:** SIL Open Font License, version 1.1.  
+Font Awesome icons, Copyright Dave Gandy
+**License:** SIL Open Font License, version 1.1.
 Source: http://fontawesome.io/
 
 
