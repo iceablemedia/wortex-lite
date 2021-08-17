@@ -2,8 +2,8 @@
 
 **Contributors:** iceable
 **Requires at least:** WordPress 4.7
-**Stable tag:** 1.2.20
-**Version:** 1.2.20
+**Stable tag:** 1.2.21
+**Version:** 1.2.21
 **Tested up to:** 5.5
 **Requires PHP:** 5.6
 **License:** GPLv2 or later
@@ -87,6 +87,14 @@ Source: http://fontawesome.io/
 
 
 ## Changelog
+
+### 1.1.21
+August 17th, 2021
+* Made the "Menu" label for the mobile dropdown menu translatable (props @automcoding)
+
+### 1.1.20
+August 11th, 2021
+* Fixed missing space before author's name in index.php (props @automcoding)
 
 ### 1.1.19
 August 29th, 2020
