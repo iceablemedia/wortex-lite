@@ -302,7 +302,7 @@ function wortex_dropdown_nav_menu() {
 
 			$menu_items = wp_get_nav_menu_items( $menu->term_id );
 			$menu_list  = '<select id="dropdown-menu">';
-			$menu_list .= '<option value="">Menu</option>';
+			$menu_list .= '<option value="">' . __( 'Menu', 'wortex-lite' ) . '</option>';
 
 			foreach ( (array) $menu_items as $key => $menu_item ) :
 
